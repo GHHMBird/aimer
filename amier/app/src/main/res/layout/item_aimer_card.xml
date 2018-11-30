@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_aimer_card_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_250"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/rentage_white"
+            android:elevation="@dimen/dp_1">
+
+            <View
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="match_parent"
+                android:background="@drawable/item_left_app_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_50"
+                        android:layout_height="@dimen/dp_50"
+                        android:src="@mipmap/item_aimer_card_aimer" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/BuyInt_Aimer"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_5"
+                            android:text="@string/item_aimer_card_position"
+                            android:textColor="@color/color_999999"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.buyint.mergerbot.view.DashedLineView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/buyint_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_18" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_60"
+                        android:orientation="vertical">
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/yewufengong_gray"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:text="@string/item_aimer_card_text1"
+                            android:textSize="@dimen/text_10" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/gongzuoyouxiang_gray"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:text="@string/item_aimer_card_text3"
+                            android:textSize="@dimen/text_10" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/yewufengong_gray"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:text="@string/item_aimer_card_text2"
+                            android:textSize="@dimen/text_10" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@mipmap/qiyewangzhi_gray"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:text="@string/item_aimer_card_text4"
+                            android:textSize="@dimen/text_10" />
+
+                        <android.support.v4.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_aimer_card_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_aimer_card_top"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@drawable/tx_bg_blue3"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:text="@string/item_aimer_card_text5"
+            android:textColor="@color/color_2d02d3" />
+
+        <TextView
+            android:id="@+id/item_aimer_card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_aimer_card_top"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_toLeftOf="@id/item_aimer_card_ok"
+            android:background="@drawable/tx_bg_gray2"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:text="@string/item_aimer_card_text6"
+            android:textColor="@color/color_999999" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

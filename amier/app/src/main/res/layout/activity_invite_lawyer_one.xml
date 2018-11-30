@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/activity_invite_lawyer_one_top"
+            layout="@layout/toolbar_white" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/activity_invite_lawyer_one_iv"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_50"
+            android:background="@mipmap/default_user"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:riv_border_color="@color/color_b3b3b3"
+            app:riv_border_width="@dimen/dp_2"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/activity_invite_lawyer_one_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_30"
+            android:hint="@string/please_write_company_name"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_f6f7f8" />
+
+        <TextView
+            android:id="@+id/activity_invite_lawyer_one_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="@string/name"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_f6f7f8" />
+
+        <TextView
+            android:id="@+id/activity_invite_lawyer_one_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="@string/current_position"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_f6f7f8" />
+
+        <TextView
+            android:id="@+id/activity_invite_lawyer_one_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="@string/company_web"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_f6f7f8" />
+
+        <TextView
+            android:id="@+id/activity_invite_lawyer_one_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="@string/company_email_same_as_website_end"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/text_16" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_f6f7f8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_invite_lawyer_one_text1"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/activity_invite_lawyer_one_bottom_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_invite_lawyer_one_text2"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_invite_lawyer_one_text3"
+                android:textColor="@color/color_cccccc"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <com.buyint.mergerbot.view.SelectableBackgroundView
+            android:id="@+id/activity_invite_lawyer_one_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginBottom="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/color_f6f7f8"
+            app:sb_isCheck="true"
+            app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+            app:sb_selectedColor="@drawable/item_app_rentage_corner"
+            app:sb_size="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/access_send_invite" />
+
+        </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape
+            android:dither="true"
+            android:shape="oval">
+            <stroke
+                android:width="@dimen/dp_9"
+                android:color="@color/color_f6f7f8" />
+            <size
+                android:width="@dimen/dp_12"
+                android:height="@dimen/dp_12" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/dp_2"
+        android:left="@dimen/dp_2"
+        android:right="@dimen/dp_2"
+        android:top="@dimen/dp_2">
+        <shape android:shape="oval">
+            <solid android:color="?attr/app_color" />
+            <size
+                android:width="@dimen/dp_1"
+                android:height="@dimen/dp_1" />
+        </shape>
+    </item>
+</layer-list>

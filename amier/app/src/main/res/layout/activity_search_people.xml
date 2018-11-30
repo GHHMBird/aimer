@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6f7f8">
+
+    <include
+        android:id="@+id/activity_search_people_top"
+        layout="@layout/toolbar_white" />
+
+    <LinearLayout
+        android:id="@+id/activity_search_people_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_search_people_top"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:src="@mipmap/search" />
+
+        <com.buyint.mergerbot.view.DeleteEditText
+            android:id="@+id/activity_search_people_et"
+            style="@style/textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@null"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/activity_search_people_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/activity_search_people_search_ll"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@color/color_b6b6b6" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_search_people_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_search_people_line"
+        android:layout_marginTop="@dimen/dp_15" />
+
+</RelativeLayout>

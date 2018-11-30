@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.buyint.mergerbot.view.DeleteEditText
+        android:id="@+id/fragment_register_login_3_et_password1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/text_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_220"
+        android:background="@null"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/color_cccccc"
+        android:textSize="@dimen/text_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/fragment_register_login_3_et_password1"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_999999" />
+
+    <com.buyint.mergerbot.view.DeleteEditText
+        android:id="@+id/fragment_register_login_3_et_password2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_register_login_3_et_password1"
+        android:layout_marginLeft="@dimen/text_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@null"
+        android:hint="@string/make_sure_your_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/color_cccccc"
+        android:textSize="@dimen/text_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/fragment_register_login_3_et_password2"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/color_999999" />
+
+    <TextView
+        android:id="@+id/fragment_register_login_3_goto4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_register_login_3_et_password2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_15"
+        android:text="@string/click_tell_aimer_who_are_you"
+        android:textSize="@dimen/text_16" />
+
+    <TextView
+        android:id="@+id/fragment_register_login_3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/fragment_register_login_3_goto4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@drawable/tx_bg_blue"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:text="@string/alright_wake_up_aimer"
+        android:textColor="@color/color_959dce"
+        android:textSize="@dimen/text_16"
+        android:visibility="gone" />
+
+
+    <com.buyint.mergerbot.view.AimerLogoImageView
+        android:id="@+id/activity_register_login_iv"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/speak_icon_anim"
+        android:transitionName="buyint_logo" />
+
+    <TextView
+        android:id="@+id/activity_register_login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_register_login_iv"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:text="@string/set_password"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

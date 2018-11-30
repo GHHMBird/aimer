@@ -1,0 +1,6 @@
+<resources>
+    <string name="update_linkedin_app_title">Linkedin下载</string>
+    <string name="update_linkedin_app_message">您的手机没有安装LinkedIn，请问您需要安装吗</string>
+    <string name="update_linkedin_app_download">下载</string>
+    <string name="update_linkedin_app_cancel">取消</string>
+</resources>

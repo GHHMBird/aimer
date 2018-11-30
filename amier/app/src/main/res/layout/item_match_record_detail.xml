@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <com.buyint.mergerbot.view.garlandview.inner.InnerRecyclerView
+        android:id="@+id/item_match_record_record_detail_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false" />
+
+    <FrameLayout
+        android:id="@+id/item_match_record_record_detail_header"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <include layout="@layout/item_match_record_record_detail_item" />
+
+        <View
+            android:id="@+id/item_match_record_record_detail_header_alpha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:background="@drawable/rentage_white" />
+
+    </FrameLayout>
+
+</FrameLayout>

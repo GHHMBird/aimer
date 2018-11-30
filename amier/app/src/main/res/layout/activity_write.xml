@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6f7f8">
+
+    <include
+        android:id="@+id/activity_write_top"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_write_top"
+        android:background="@color/white"
+        android:minHeight="@dimen/dp_200"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <EditText
+            android:id="@+id/activity_write_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:minLines="8"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/activity_write_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="@dimen/dp_16"
+            android:textSize="@dimen/text_14" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_write_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

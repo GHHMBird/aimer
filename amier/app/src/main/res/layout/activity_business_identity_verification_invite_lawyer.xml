@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_business_identity_verification_invite_lawyer_top"
+        layout="@layout/toolbar_white" />
+
+    <TextView
+        android:id="@+id/activity_business_identity_verification_invite_lawyer_tv"
+        style="@style/textview_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_business_identity_verification_invite_lawyer_top"
+        android:background="?attr/app_color"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp_10"
+        android:text="@string/access_pass_title"
+        android:textColor="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_lawyer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_business_identity_verification_invite_lawyer_tv"
+        android:background="@color/color_f6f7f8" />
+
+</RelativeLayout>

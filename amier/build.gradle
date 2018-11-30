@@ -1,0 +1,26 @@
+buildscript {
+    ext.kotlin_version = '1.2.71'
+    repositories {
+        google()
+        jcenter()
+        maven {url 'https://jitpark.io/'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.3'
+        classpath 'me.tatarka:gradle-retrolambda:3.7.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        google()
+        maven {url 'https://jitpark.io/'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

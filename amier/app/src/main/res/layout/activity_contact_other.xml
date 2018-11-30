@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_contact_title" />
+
+
+    <TextView
+        android:id="@+id/tv_other_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/what_is_your_relationship_with_him"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_40"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:hint="@string/contact"
+            android:textSize="@dimen/text_14" />
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_22000000"/>
+
+    </LinearLayout>
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/btn_contact_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@color/color_f6f7f8"
+        app:sb_isCheck="true"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/alright" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+</LinearLayout>

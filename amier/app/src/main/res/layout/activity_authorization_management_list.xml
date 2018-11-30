@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_authorization_management_list_top"
+        layout="@layout/toolbar_left" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_authorization_management_list_top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_authorization_management_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f6f7f8" />
+
+        <LinearLayout
+            android:id="@+id/activity_authorization_management_list_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@drawable/activity_authorization_management_list_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_250"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_200"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:src="@mipmap/authorization_management_bg" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_30"
+                android:gravity="center"
+                android:text="@string/you_can"
+                android:textSize="@dimen/text_18" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center"
+                android:text="@string/add_person_help_you"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_20" />
+
+            <com.buyint.mergerbot.view.SelectableBackgroundView
+                android:id="@+id/activity_authorization_management_list_sbv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_40"
+                android:background="@color/color_f6f7f8"
+                app:sb_isCheck="true"
+                app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+                app:sb_selectedColor="@drawable/item_app_rentage_corner"
+                app:sb_size="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/add_secretary" />
+
+            </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/activity_authorization_management_list_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+</RelativeLayout>

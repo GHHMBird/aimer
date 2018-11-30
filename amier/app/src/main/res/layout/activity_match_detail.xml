@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar" />
+
+    <com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_match_detail_toolbar"
+        app:srlEnablePureScrollModeBottom="true">
+
+        <com.scwang.smartrefresh.header.StoreHouseHeader
+            android:id="@+id/storeHouseHeader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:shhLineWidth="2dp"
+            app:shhText="BUYINT-AIMER" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/activity_match_detail_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f6f7f8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_150">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_120"
+                        android:background="?attr/app_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_150"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rentage_white"
+                            android:orientation="vertical">
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_8"
+                                android:layout_marginRight="@dimen/dp_8"
+                                android:gravity="top">
+
+                                <TextView
+                                    android:id="@+id/activity_match_detail_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/colorBlack"
+                                    android:textSize="@dimen/text_18" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginRight="@dimen/dp_12"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_16"
+                                    android:layout_height="@dimen/dp_16"
+                                    android:src="@mipmap/price" />
+
+                                <TextView
+                                    android:id="@+id/activity_match_detail_money"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="@color/color_7b7b86"
+                                    android:textSize="@dimen/text_12" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_16"
+                                    android:layout_height="@dimen/dp_16"
+                                    android:src="@mipmap/type" />
+
+                                <TextView
+                                    android:id="@+id/activity_match_detail_type"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_3"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="@color/color_7b7b86"
+                                    android:textSize="@dimen/text_12" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_12"
+                                android:layout_marginRight="@dimen/dp_12"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_16"
+                                    android:layout_height="@dimen/dp_16"
+                                    android:src="@mipmap/place" />
+
+                                <TextView
+                                    android:id="@+id/activity_match_detail_location"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="@color/color_7b7b86"
+                                    android:textSize="@dimen/text_12" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_16"
+                                    android:layout_height="@dimen/dp_16"
+                                    android:src="@mipmap/industry" />
+
+                                <TextView
+                                    android:id="@+id/activity_match_detail_industry"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp_5"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:singleLine="true"
+                                    android:textColor="@color/color_7b7b86"
+                                    android:textSize="@dimen/text_12" />
+
+                            </LinearLayout>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--<com.buyint.mergerbot.view.DashedLineView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginLeft="@dimen/dp_16"-->
+                <!--android:layout_marginRight="@dimen/dp_16"-->
+                <!--android:layout_marginTop="@dimen/dp_24"-->
+                <!--android:background="@cocicle_whitehite" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/rentage_white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_6">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/toolbar_image_image"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="@dimen/dp_50"
+                            android:src="@mipmap/match_record_reliable" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="280"
+                            android:textColor="@color/colorBlack" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="@dimen/dp_8">
+
+                        <TextView
+                            android:id="@+id/activity_match_detail_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_3"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_18" />
+
+                        <TextView
+                            android:id="@+id/activity_match_detail_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/dp_3"
+                            android:textColor="@color/color_7b7b86" />
+
+                        <TextView
+                            android:id="@+id/activity_match_detail_comefrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:drawablePadding="@dimen/dp_5"
+                            android:textColor="@color/color_7b7b86" />
+
+                        <ImageView
+                            android:id="@+id/activity_match_detail_comefrom_pic"
+                            android:layout_width="@dimen/dp_16"
+                            android:layout_height="@dimen/dp_16"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toStartOf="@id/activity_match_detail_comefrom"
+                            android:src="@mipmap/comefrom"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <!--<com.buyint.mergerbot.view.DashedLineView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_marginBottom="@dimen/dp_10"-->
+                <!--android:layout_marginLeft="@dimen/dp_16"-->
+                <!--android:layout_marginRight="@dimen/dp_16"-->
+                <!--android:layout_marginTop="@dimen/dp_10"-->
+                <!--android:background="@cocicle_whitehite" />-->
+
+                <include layout="@layout/layout_company_detail" />
+
+                <LinearLayout
+                    android:id="@+id/activity_match_detail_web_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include layout="@layout/layout_match_web" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_match_detail_piechart_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/layout_match_analyse" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_match_detail_people_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/layout_match_related_master" />
+
+                </LinearLayout>
+
+                <include layout="@layout/layout_match_intelligence_match" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade>
+
+    <RelativeLayout
+        android:id="@+id/activity_match_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5">
+
+        <View
+            android:id="@+id/toolbar_white_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_16" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_white_top">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_white_back"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_36">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_26"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:src="@mipmap/arrow_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/toolbar_white_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_marginRight="@dimen/dp_60"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_18" />
+
+            <RelativeLayout
+                android:id="@+id/toolbar_white_right_add_rl"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_36"
+                android:layout_alignParentRight="true"
+                android:layout_toStartOf="@id/toolbar_white_right_tv"
+                android:paddingRight="@dimen/dp_10">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/three_cicle" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_match_detail_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_below="@id/activity_match_detail_toolbar"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/activity_match_detail_tab1_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/base_information"
+                android:textColor="?attr/app_color" />
+
+            <TextView
+                android:id="@+id/activity_match_detail_tab2_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/link_information"
+                android:textColor="@color/color_999999" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <View
+                android:id="@+id/activity_match_detail_tab1_view"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_3"
+                android:background="?attr/app_color" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2" />
+
+            <View
+                android:id="@+id/activity_match_detail_tab2_view"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/transform" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_match_detail_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_match_detail_toolbar" />
+
+</RelativeLayout>

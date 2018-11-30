@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_education_experience_top"
+        layout="@layout/toolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_education_experience_top"
+        android:background="@color/color_f6f7f8"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/required_field_xing"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/activity_education_experience_school_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:paddingStart="@dimen/dp_16"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/school_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_education_experience_school_name_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/write_school_name"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_education_experience_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/start_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_education_experience_start_time_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/write_start_time"
+                    android:textColor="@color/color_999999" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_education_experience_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/end_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_education_experience_end_time_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/write_end_time"
+                    android:textColor="@color/color_999999" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_education_experience_profession"
+                android:layout_width="match_parent"
+                android:paddingStart="@dimen/dp_16"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="top"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/profession"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <com.buyint.mergerbot.view.FluidLayout
+                    android:id="@+id/activity_education_experience_profession_fl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/optional"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/activity_education_experience_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:paddingStart="@dimen/dp_16"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/education"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_education_experience_education_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/please_select_your_education"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:paddingStart="@dimen/dp_16"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/is_whether_or_not"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/activity_education_experience_tongzhao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingStart="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5">
+
+                        <ImageView
+                            android:id="@+id/activity_education_experience_tongzhao_iv"
+                            android:layout_width="@dimen/dp_12"
+                            android:layout_height="@dimen/dp_12"
+                            android:src="@drawable/ring_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tongzhao" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_education_experience_feitongzhao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="@dimen/dp_5"
+                        android:paddingLeft="@dimen/dp_10"
+                        android:paddingTop="@dimen/dp_5">
+
+                        <ImageView
+                            android:id="@+id/activity_education_experience_feitongzhao_iv"
+                            android:layout_width="@dimen/dp_12"
+                            android:layout_height="@dimen/dp_12"
+                            android:src="@drawable/ring_gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dp_16"
+                            android:text="@string/feitongzhao" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_education_experience_academic_achievements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/academic_achievements"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_education_experience_academic_achievements_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/write_your_academic_achievements"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_education_experience_delete"
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:text="@string/delete_this_education_experience"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/activity_education_experience_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_education_experience_top" />
+
+</RelativeLayout>

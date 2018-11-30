@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="@color/color_f6f7f8" />
+
+    <com.buyint.mergerbot.view.DeleteEditText
+        android:id="@+id/activity_location_set_your_location"
+        style="@style/textview_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/set_your_company_place"
+        android:paddingLeft="@dimen/dp_16"
+        android:paddingRight="@dimen/dp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_f6f7f8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_marginStart="@dimen/dp_16"
+            android:src="@mipmap/place" />
+
+        <TextView
+            android:id="@+id/activity_location_read_now_location"
+            style="@style/textview_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_press_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="@string/read_now_place"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

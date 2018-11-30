@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rootLayout"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_verification_msg2_top"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_verification_msg2_top"
+        android:background="@color/color_f6f7f8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:paddingLeft="@dimen/dp_16"
+            android:text="@string/please_set_aimer_password_you_can_use_account_and_password" />
+
+        <LinearLayout
+            android:id="@+id/activity_verification_msg2_phone_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/phone_number"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/activity_verification_msg2_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_verification_msg2_email_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/email"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/activity_verification_msg2_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/verify_code"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_16" />
+
+            <EditText
+                android:id="@+id/activity_verification_msg2_verify_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/write_verification"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:textSize="@dimen/text_16" />
+
+            <TextView
+                android:id="@+id/activity_verification_msg2_get_verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_8"
+                android:paddingRight="@dimen/dp_8"
+                android:text="@string/get_verification"
+                android:textColor="@color/color_959dce" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/new_password"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_16" />
+
+            <EditText
+                android:id="@+id/activity_verification_msg2_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@null"
+                android:hint="@string/write_new_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_1"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:text="@string/ensure_password"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_16" />
+
+            <EditText
+                android:id="@+id/activity_verification_msg2_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@null"
+                android:hint="@string/ensure_new_password"
+                android:inputType="textPassword"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16"
+            android:text="@string/set_password_hint" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_verification_msg2_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_verification_msg2_top">
+
+    </FrameLayout>
+
+</RelativeLayout>

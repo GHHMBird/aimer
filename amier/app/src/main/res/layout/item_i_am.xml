@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/drawable_tv_eva_app_color"
+            android:elevation="@dimen/dp_2"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:elevation="@dimen/dp_2"
+                android:text="@string/item_i_am_text"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+            <EditText
+                android:id="@+id/item_i_am_et"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_16"
+                android:hint="MIKE"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

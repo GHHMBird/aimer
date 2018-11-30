@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/activity_home_dl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_main_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/toolbar_image_top"
+                                android:background="?attr/app_color"
+                                android:paddingBottom="@dimen/dp_5"
+                                android:paddingTop="@dimen/dp_5">
+
+                                <com.buyint.mergerbot.view.AimerLogoImageView
+                                    android:id="@+id/toolbar_image_image"
+                                    android:layout_width="@dimen/dp_60"
+                                    android:layout_height="@dimen/dp_60"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/speak_icon_anim" />
+
+                                <RelativeLayout
+                                    android:id="@+id/toolbar_image_more"
+                                    android:layout_width="@dimen/dp_60"
+                                    android:layout_height="@dimen/dp_60">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dp_16"
+                                        android:layout_height="@dimen/dp_24"
+                                        android:layout_marginStart="@dimen/dp_16"
+                                        android:layout_marginTop="@dimen/dp_16"
+                                        android:src="@mipmap/more" />
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/toolbar_image_add"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/dp_60"
+                                    android:layout_alignParentRight="true"
+                                    android:paddingLeft="@dimen/dp_6"
+                                    android:paddingRight="@dimen/dp_10">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/dp_16"
+                                        android:layout_height="@dimen/dp_16"
+                                        android:layout_marginTop="@dimen/dp_20"
+                                        android:src="@mipmap/add_white" />
+
+                                </RelativeLayout>
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_f6f7f8">
+
+                            <com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade
+                                android:id="@+id/activity_main_swipe"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srlEnablePureScrollModeBottom="true">
+
+                                <com.buyint.mergerbot.view.MaterialHeader
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/activity_main_recyclerview"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/color_f6f7f8">
+
+                                </android.support.v7.widget.RecyclerView>
+                            </com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade>
+                        </FrameLayout>
+
+                        <!--<RelativeLayout-->
+                        <!--android:id="@+id/activity_home_rl"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:background="@color/color_cc00"-->
+                        <!--android:visibility="gone" />-->
+
+                        <FrameLayout
+                            android:id="@+id/activity_main_fl"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <com.buyint.mergerbot.view.floatingactionbutton.FloatingActionsMenu
+                            android:id="@+id/activity_home_fam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="@dimen/dp_24"
+                            android:layout_marginRight="@dimen/dp_10"
+                            app:fab_addButtonColorNormal="?attr/app_color"
+                            app:fab_addButtonColorPressed="?attr/app_color"
+                            app:fab_addButtonSize="normal"
+                            app:fab_addButton_icon="@mipmap/match_record_pei"
+                            app:fab_labelStyle="@style/menu_lables_style">
+
+                            <!--<com.buyint.mergerbot.view.floatingactionbutton.FloatingActionButton-->
+                            <!--android:id="@+id/activity_home_fab1"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:fab_colorNormal="@color/white"-->
+                            <!--app:fab_colorPressed="@color/white"-->
+                            <!--app:fab_icon="@mipmap/match_record_2"-->
+                            <!--app:fab_size="normal"-->
+                            <!--app:fab_title="@string/intellectual_union" />-->
+
+                            <!--<com.buyint.mergerbot.view.floatingactionbutton.FloatingActionButton-->
+                            <!--android:id="@+id/activity_home_fab2"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--app:fab_colorNormal="@color/white"-->
+                            <!--app:fab_colorPressed="@color/white"-->
+                            <!--app:fab_icon="@mipmap/match_record_1"-->
+                            <!--app:fab_size="normal"-->
+                            <!--app:fab_title="@string/human_relation" />-->
+
+                        </com.buyint.mergerbot.view.floatingactionbutton.FloatingActionsMenu>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/activity_main_bottom_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?attr/app_color"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/activity_home_bottom1_ll"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:paddingTop="@dimen/dp_10">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:src="@mipmap/homepage" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:gravity="center"
+                                    android:text="@string/home_page"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/activity_home_bottom2_ll"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:paddingTop="@dimen/dp_10">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:src="@mipmap/match_record" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:gravity="center"
+                                    android:text="@string/match_record"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/activity_home_bottom3_ll"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dp_10"
+                                android:paddingTop="@dimen/dp_10">
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:src="@mipmap/intelligence" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp_5"
+                                    android:gravity="center"
+                                    android:text="@string/human_relation"
+                                    android:textColor="@color/white" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_main_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:clipToPadding="true"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_17"
+                android:background="?attr/app_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/menu_layout_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_70"
+                    android:background="?attr/app_color"
+                    android:paddingBottom="@dimen/dp_5" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/menu_layout_title"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/my_project"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/menu_layout_title"
+                        android:layout_marginTop="@dimen/dp_50"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:src="@mipmap/my_project" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:text="@string/my_project" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menu_layout_match_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:src="@mipmap/match_record_blank" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:text="@string/match_record" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menu_layout_my_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:src="@mipmap/my_account" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:text="@string/my_account" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menu_layout_training_aimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:src="@mipmap/train_my_aimer" />
+
+                        <TextView
+                            android:id="@+id/menu_layout_version_check_tv"
+                            style="@style/textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:text="@string/train_my_aimer" />
+
+                    </LinearLayout>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:id="@+id/menu_layout_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_16"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:src="@mipmap/help" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dp_16"
+                            android:text="@string/help" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/menu_layout_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_50"
+                        android:background="@drawable/view_press_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_24"
+                            android:layout_height="@dimen/dp_24"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:src="@mipmap/setting" />
+
+                        <TextView
+                            style="@style/textview_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_16"
+                            android:text="@string/setting" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/dp_74"
+                    android:layout_height="@dimen/dp_74"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@drawable/circle_white" />
+
+                <ImageView
+                    android:id="@+id/menu_layout_icon"
+                    android:layout_width="@dimen/dp_70"
+                    android:layout_height="@dimen/dp_70"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_18"
+                    android:src="@mipmap/default_user" />
+
+                <TextView
+                    android:id="@+id/menu_layout_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_100"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

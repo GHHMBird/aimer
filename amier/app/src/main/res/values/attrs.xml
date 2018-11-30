@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--圆形进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <!--背景圆颜色-->
+        <attr name="roundColor" format="color" />
+        <!--进度圆颜色-->
+        <attr name="roundProgressColor" format="color" />
+        <!--背景圆/进度圆 线宽-->
+        <attr name="roundWidth" format="dimension"></attr>
+
+        <!--进度拇指圆半径-->
+        <attr name="thumbRadius" format="dimension"></attr>
+        <!--拇指圆颜色-->
+        <attr name="thumbColor" format="color"></attr>
+
+        <!--最大进度-->
+        <attr name="maxProgress" format="integer"></attr>
+
+        <!--是否实心 当前只支持实心-->
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RippleLayout">
+        <attr name="color" format="color" />
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="duration" format="integer" />
+        <attr name="rippleNums" format="integer" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+
+    <!-- 自定义验证码输入框-->
+    <declare-styleable name="VerificationCodeView">
+        <!--输入框的数量-->
+        <attr name="icv_et_number" format="integer" />
+        <!--输入框的宽度-->
+        <attr name="icv_et_width" format="dimension|reference" />
+        <!--输入框之间的分割线-->
+        <attr name="icv_et_divider_drawable" format="reference" />
+        <!--输入框文字颜色-->
+        <attr name="icv_et_text_color" format="color|reference" />
+        <!--输入框文字大小-->
+        <attr name="icv_et_text_size" format="dimension|reference" />
+        <!--输入框获取焦点时边框-->
+        <attr name="icv_et_bg_focus" format="reference" />
+        <!--输入框没有焦点时边框-->
+        <attr name="icv_et_bg_normal" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FluidLayout">
+        <attr name="FluidLayout_gravity">
+            <flag name="FluidLayout_top" value="0x30" />
+            <flag name="FluidLayout_bottom" value="0x50" />
+            <flag name="FluidLayout_center" value="0x11" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FluidLayout_Layout">
+        <attr name="FluidLayout_Layout_layout_gravity">
+            <flag name="FluidLayout_Layout_top" value="0x30" />
+            <flag name="FluidLayout_Layout_bottom" value="0x50" />
+            <flag name="FluidLayout_Layout_center" value="0x11" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefreshView">
+        <attr name="type" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="voiceView">
+        <!--中间线的颜色，就是波形的时候，大家可以看到，中间有一条直线，就是那个-->
+        <attr name="middleLine" format="color" />
+        <!--中间线的高度，因为宽度是充满的-->
+        <attr name="middleLineHeight" format="dimension" />
+        <!--波动的线的颜色，如果是距形样式的话，刚是距形的颜色-->
+        <attr name="voiceLine" format="color" />
+        <!--波动线的横向移动速度，线的速度的反比，即这个值越小，线横向移动越快，越大线移动越慢，默认90-->
+        <attr name="lineSpeed" format="integer" />
+        <!--矩形的宽度-->
+        <attr name="rectWidth" format="dimension" />
+        <!--矩形之间的间隔-->
+        <attr name="rectSpace" format="dimension" />
+        <!--矩形的初始高度，就是没有声音的时候，矩形的高度-->
+        <attr name="rectInitHeight" format="dimension" />
+        <!--所输入音量的最大值-->
+        <attr name="maxVolume" format="float" />
+        <!--控件的样式，一共有两种，波形或者矩形-->
+        <attr name="viewMode">
+            <enum name="line" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+        <!--灵敏度，默认值是4-->
+        <attr name="sensibility">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+            <enum name="four" value="4" />
+            <enum name="five" value="5" />
+        </attr>
+        <!--精细度，绘制曲线的时候，每几个像素绘制一次，默认是1，一般，这个值越小，曲线越顺滑，
+            但在一些旧手机上，会出现帧率过低的情况，可以把这个值调大一点，在图片的顺滑度与帧率之间做一个取舍-->
+        <attr name="fineness">
+            <enum name="one" value="1" />
+            <enum name="two" value="2" />
+            <enum name="three" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <attr name="app_color" format="reference" />
+    <attr name="app_color_1" format="reference" />
+    <attr name="app_color_2" format="reference" />
+    <attr name="app_color_3" format="reference" />
+
+    <declare-styleable name="JellyToggleButton">
+
+        <attr name="jtbLeftBackgroundColor" format="color|reference" />
+        <attr name="jtbRightBackgroundColor" format="color|reference" />
+        <attr name="jtbLeftThumbColor" format="color|reference" />
+        <attr name="jtbRightThumbColor" format="color|reference" />
+        <attr name="jtbLeftTextColor" format="color|reference" />
+        <attr name="jtbRightTextColor" format="color|reference" />
+        <attr name="jtbLeftTextTypeface" format="string" />
+        <attr name="jtbRightTextTypeface" format="string" />
+        <attr name="jtbLeftTextSize" format="dimension|reference" />
+        <attr name="jtbRightTextSize" format="dimension|reference" />
+        <attr name="jtbLeftText" format="string|reference" />
+        <attr name="jtbRightText" format="string|reference" />
+
+        <attr name="jtbTextMarginLeft" format="dimension|reference" />
+        <attr name="jtbTextMarginRight" format="dimension|reference" />
+        <attr name="jtbTextMarginTop" format="dimension|reference" />
+        <attr name="jtbTextMarginBottom" format="dimension|reference" />
+        <attr name="jtbTextMarginCenter" format="dimension|reference" />
+
+        <attr name="jtbThumbRadius" format="dimension|reference" />
+
+        <attr name="jtbBackgroundMeasureRatioValue" format="float|reference" />
+        <attr name="jtbBackgroundRadius" format="dimension|reference" />
+
+        <attr name="jtbColorChangeType" format="enum">
+            <enum name="rgb" value="0" />
+            <enum name="hsv" value="1" />
+        </attr>
+
+        <attr name="jtbJelly" format="enum">
+            <enum name="itself" value="0" />
+            <enum name="lazy_tremble_head_fatty" value="1" />
+            <enum name="lazy_tremble_head_slim_jim" value="2" />
+            <enum name="lazy_tremble_tail_fatty" value="3" />
+            <enum name="lazy_tremble_tail_slim_jim" value="4" />
+            <enum name="lazy_tremble_body_fatty" value="5" />
+            <enum name="lazy_tremble_body_slim_jim" value="6" />
+            <enum name="lazy_stiff_fatty" value="7" />
+            <enum name="lazy_stiff_slim_jim" value="8" />
+            <enum name="active_tremble_head_fatty" value="9" />
+            <enum name="active_tremble_head_slim_jim" value="10" />
+            <enum name="active_tremble_tail_fatty" value="11" />
+            <enum name="active_tremble_tail_slim_jim" value="12" />
+            <enum name="active_tremble_body_fatty" value="13" />
+            <enum name="active_tremble_body_slim_jim" value="14" />
+            <enum name="active_stiff_fatty" value="15" />
+            <enum name="active_stiff_slim_jim" value="16" />
+            <enum name="random" value="17" />
+        </attr>
+
+        <attr name="jtbEaseType" format="enum">
+            <enum name="ease_in_sine" value="0" />
+            <enum name="ease_out_sine" value="1" />
+            <enum name="ease_in_out_sine" value="2" />
+            <enum name="ease_in_quad" value="3" />
+            <enum name="ease_out_quad" value="4" />
+            <enum name="ease_in_out_quad" value="5" />
+            <enum name="ease_in_cubic" value="6" />
+            <enum name="ease_out_cubic" value="7" />
+            <enum name="ease_in_out_cubic" value="8" />
+            <enum name="ease_in_quart" value="9" />
+            <enum name="ease_out_quart" value="10" />
+            <enum name="ease_in_out_quart" value="11" />
+            <enum name="ease_in_quint" value="12" />
+            <enum name="ease_out_quint" value="13" />
+            <enum name="ease_in_out_quint" value="14" />
+            <enum name="ease_in_expo" value="15" />
+            <enum name="ease_out_expo" value="16" />
+            <enum name="ease_in_out_expo" value="17" />
+            <enum name="ease_in_circ" value="18" />
+            <enum name="ease_out_circ" value="19" />
+            <enum name="ease_in_out_circ" value="20" />
+            <enum name="ease_in_back" value="21" />
+            <enum name="ease_out_back" value="22" />
+            <enum name="ease_in_out_back" value="23" />
+            <enum name="ease_in_elastic" value="24" />
+            <enum name="ease_out_elastic" value="25" />
+            <enum name="ease_in_out_elastic" value="26" />
+            <enum name="ease_in_bounce" value="27" />
+            <enum name="ease_out_bounce" value="28" />
+            <enum name="ease_in_out_bounce" value="29" />
+            <enum name="linear" value="30" />
+        </attr>
+
+        <attr name="jtbDuration" format="integer|reference" />
+
+        <attr name="jtbTouchMoveRatioValue" format="float|reference" />
+        <attr name="jtbBezierControlValue" format="float|reference" />
+        <attr name="jtbStretchDistanceRatioValue" format="float|reference" />
+        <attr name="jtbBezierScaleRatioValue" format="float|reference" />
+
+        <attr name="jtbMoveToSameStateCallListener" format="boolean|reference" />
+        <attr name="jtbDraggable" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="GarlandView">
+        <attr name="itemStart" format="dimension" />
+        <attr name="itemGap" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FunnyBubbleView">
+        <!--半径大小-->
+        <attr name="FunnyBubbleView_radius" format="dimension" />
+        <!--气泡颜色-->
+        <attr name="FunnyBubbleView_color" format="color" />
+        <!--要显示的文字-->
+        <attr name="FunnyBubbleView_text" format="string|reference" />
+        <!--文字大小-->
+        <attr name="FunnyBubbleView_textSize" format="dimension" />
+        <!--文字颜色-->
+        <attr name="FunnyBubbleView_textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectableBackgroundView">
+        <attr name="sb_normalColor" format="integer" />
+        <attr name="sb_selectedColor" format="integer" />
+        <attr name="sb_normalTint" format="reference|color" />
+        <attr name="sb_selectedTint" format="reference|color" />
+        <attr name="sb_size" format="dimension" />
+        <attr name="sb_duration" format="integer" />
+        <attr name="sb_isCheck" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TextImageView">
+        <attr name="cftiv_text_size" format="dimension" />
+        <attr name="cftiv_text" format="string" />
+        <attr name="cftiv_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="FreeGrowUpParentRelativeLayout">
+        <attr name="offset" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_icon" format="reference" />
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_title" format="string" />
+        <attr name="fab_stroke_visible" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color" />
+        <attr name="fab_addButtonColorNormal" format="color" />
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_addButton_icon" format="reference" />
+        <attr name="fab_addButtonPlusIconColor" format="color" />
+        <attr name="fab_addButtonStrokeVisible" format="boolean" />
+        <attr name="fab_labelStyle" format="reference" />
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DynamicWave">
+        <attr name="water_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="srlEnablePureScrollModeTop" format="boolean"/>
+        <attr name="srlEnablePureScrollModeBottom" format="boolean"/>
+    </declare-styleable>
+
+</resources>

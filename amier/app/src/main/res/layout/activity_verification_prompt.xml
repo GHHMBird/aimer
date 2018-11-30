@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_290"
+        android:src="@mipmap/activity_verification_prompt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/you_are_not_verification_account"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:gravity="center"
+        android:text="@string/activity_verification_prompt_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_3"
+        android:gravity="center"
+        android:text="@string/activity_verification_prompt_text2" />
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/activity_verification_prompt_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:sb_isCheck="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/color_f6f7f8"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/prompt_verification" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+</LinearLayout>

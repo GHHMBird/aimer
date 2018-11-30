@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    android:repeatCount="1">
+
+    <item
+        android:drawable="@mipmap/appicon20"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon1"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon2"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon3"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon4"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon5"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon6"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon7"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon8"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon9"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon10"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon11"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon12"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon13"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon14"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon15"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon16"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon17"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon18"
+        android:duration="150" />
+    <item
+        android:drawable="@mipmap/appicon19"
+        android:duration="150" />
+</animation-list>

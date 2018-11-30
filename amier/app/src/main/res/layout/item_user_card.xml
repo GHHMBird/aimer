@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/item_user_card_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/item_zpxm_bg"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_zpxm_title_bg"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingTop="@dimen/dp_5"
+                android:text="@string/my_card"
+                android:textSize="@dimen/text_12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_16"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/item_user_card_icon"
+                    android:layout_width="@dimen/dp_60"
+                    android:layout_height="@dimen/dp_60"
+                    android:src="@mipmap/default_user" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/item_user_card_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="@dimen/text_18" />
+
+                    <EditText
+                        android:id="@+id/item_user_card_position"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@null"
+                        android:hint="@string/title_with_star_cn"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="@dimen/text_14" />
+
+                    <EditText
+                        android:id="@+id/item_user_card_major_business"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:background="@null"
+                        android:hint="@string/major_business"
+                        android:textColorHint="@color/color_999999"
+                        android:textSize="@dimen/text_14" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.buyint.mergerbot.view.DashedLineView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_15"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_24"
+                            android:text="@string/company_name"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:drawableLeft="@mipmap/yewufengong_black"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="@string/division_of_labor"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dp_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:drawableLeft="@mipmap/xifenhangye_black"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="@string/industry_subdivision"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/dp_14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:drawableLeft="@mipmap/gongzuoyouxaing_black"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:text="@string/work_email"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="*"
+                            android:textSize="@dimen/dp_14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:drawableLeft="@mipmap/qiyewangzhi_black"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:text="@string/company_web"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/dp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp_20"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:text="*"
+                            android:textSize="@dimen/dp_14" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/item_user_card_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_24"
+                        android:background="@null"
+                        android:hint="@string/item_user_card_hint1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_14" />
+
+                    <EditText
+                        android:id="@+id/item_user_card_division_of_labor"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@null"
+                        android:hint="@string/item_user_card_hint2"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_14" />
+
+                    <EditText
+                        android:id="@+id/item_user_card_industry_subdivision"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@null"
+                        android:hint="@string/item_user_card_hint3"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_14" />
+
+                    <EditText
+                        android:id="@+id/item_user_card_work_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@null"
+                        android:hint="@string/item_user_card_hint4"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_14" />
+
+                    <EditText
+                        android:id="@+id/item_user_card_company_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:background="@null"
+                        android:hint="@string/item_user_card_hint5"
+                        android:singleLine="true"
+                        android:textSize="@dimen/text_14" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_user_card_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_user_card_top"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@drawable/tx_bg_blue3"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:text="@string/write_finish"
+            android:textColor="@color/color_2d02d3" />
+
+        <TextView
+            android:id="@+id/item_user_card_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_user_card_top"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_toLeftOf="@id/item_user_card_ok"
+            android:background="@drawable/tx_bg_gray2"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:text="@string/item_aimer_card_text6"
+            android:textColor="@color/color_999999" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

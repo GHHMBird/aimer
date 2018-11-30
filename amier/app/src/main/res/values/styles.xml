@@ -1,0 +1,193 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="MergerbotTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--标题栏-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!--系统中子空间，复选框，单选按钮，选中的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorBlue</item>
+        <item name="colorButtonNormal">@color/colorPrimaryFaded</item>
+        <item name="colorSwitchThumbNormal">@color/colorAccent</item>
+
+    </style>
+
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="standard_theme" parent="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="app_color">@color/color_2702bb</item>
+        <item name="app_color_1">@color/color_2d02d3</item>
+        <item name="app_color_2">@color/color_08046B</item>
+        <item name="app_color_3">@color/color_4829c6</item>
+    </style>
+
+    <style name="light_blue_theme" parent="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="app_color">@color/color_3986ff</item>
+        <item name="app_color_1">@color/color_3996ff</item>
+        <item name="app_color_2">@color/color_31aaff</item>
+        <item name="app_color_3">@color/color_36bbff</item>
+    </style>
+
+    <style name="red_theme" parent="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="app_color">@color/colorRed</item>
+        <item name="app_color_1">@color/colorRed1</item>
+        <item name="app_color_2">@color/colorRed2</item>
+        <item name="app_color_3">@color/colorRed3</item>
+    </style>
+
+    <style name="black_theme" parent="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="app_color">@color/color_232323</item>
+        <item name="app_color_1">@color/color_383838</item>
+        <item name="app_color_2">@color/color_3f3f3f</item>
+        <item name="app_color_3">@color/color_4e4e4e</item>
+    </style>
+
+    <style name="deep_blue_theme" parent="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="app_color">@color/color_5a79ff</item>
+        <item name="app_color_1">@color/color_848eff</item>
+        <item name="app_color_2">@color/color_a5a6ff</item>
+        <item name="app_color_3">@color/color_b5b7ff</item>
+    </style>
+
+    <style name="pink_theme" parent="NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+        <item name="app_color">@color/color_7345ef</item>
+        <item name="app_color_1">@color/color_7345ef</item>
+        <item name="app_color_2">@color/color_7399ef</item>
+        <item name="app_color_3">@color/color_7379ff</item>
+    </style>
+
+    <style name="MergerbotTheme.NoActionBarBlueEditText">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+        <item name="android:colorBackground">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorBlue</item>
+        <item name="colorControlHighlight">@color/colorBlue</item>
+        <item name="android:windowActivityTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="splash_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/splash_iamge</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+    <style name="my_edittext" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/color_f2f2f2</item>
+        <item name="colorControlActivated">@color/color_f2f2f2</item>
+    </style>
+
+    <style name="menu_lables_style">
+        <item name="android:text">服务功能</item>
+        <item name="android:textColor">@color/color_666666</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="textStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="popupwindow_anim_notice">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_out</item>
+    </style>
+
+    <style name="popupwindow_anim_phone">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_up</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_down</item>
+    </style>
+
+    <style name="textview_style">
+        <item name="android:paddingTop">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:paddingBottom">@dimen/dp_10</item>
+    </style>
+
+    <style name="Dialog.NoTitle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimationPicker</item>
+    </style>
+
+    <style name="AnimationPicker" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <!--下滑线颜色-->
+    <style name="Edittext_line">
+        <item name="android:colorControlActivated">?attr/app_color</item>
+        <item name="android:colorControlNormal">@color/color_999999</item>
+    </style>
+
+</resources>

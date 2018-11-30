@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_contact_title"/>
+
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/btn_contact_mate"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/work_mate" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/btn_contact_busy"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/business_friend" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/btn_contact_custom"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/client" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/btn_contact_other"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@color/white"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/other" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+</LinearLayout>

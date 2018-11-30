@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/view_press_bg"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/item_performance_achievement_rentage"
+            android:layout_width="@dimen/dp_5"
+            android:layout_height="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@color/color_cccccc" />
+
+        <View
+            android:id="@+id/item_performance_achievement_top_line"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:background="@color/color_cccccc" />
+
+        <TextView
+            android:id="@+id/item_performance_achievement_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_18"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_16" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_12"
+            android:id="@+id/item_performance_achievement_click_iv"
+            android:layout_height="@dimen/dp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_20"
+            android:src="@mipmap/other_pic_black" />
+
+        <TextView
+            android:id="@+id/item_performance_achievement_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_performance_achievement_company"
+            android:layout_below="@id/item_performance_achievement_company"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/text_12" />
+
+        <TextView
+            android:id="@+id/item_performance_achievement_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/item_performance_achievement_time"
+            android:layout_below="@id/item_performance_achievement_time"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_20"
+            android:textSize="@dimen/text_14" />
+
+        <View
+            android:id="@+id/item_performance_achievement_below_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/item_performance_achievement_desc"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/color_cccccc" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/item_performance_achievement_below_line"
+            android:layout_below="@id/item_performance_achievement_rentage"
+            android:layout_marginLeft="@dimen/dp_18"
+            android:layout_marginTop="@dimen/dp_6"
+            android:background="@color/color_cccccc" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

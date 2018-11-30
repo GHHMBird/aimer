@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_result_ll"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/rentage_white"
+        android:elevation="@dimen/dp_5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_result_kaopu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_3"
+                android:textColor="@color/color_808080"
+                android:textSize="@dimen/text_24" />
+
+            <TextView
+                android:id="@+id/item_result_tv_reliable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reliable"
+                android:textColor="@color/color_808080"
+                android:textSize="@dimen/text_14" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/item_result_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_808080"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/item_result_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="@color/color_808080" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_result_iv"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@color/color_808080" />
+
+                <TextView
+                    android:id="@+id/item_result_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/item_result_iv"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/item_result_iv"
+                    android:textSize="@dimen/text_18" />
+
+                <TextView
+                    android:id="@+id/item_result_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item_result_iv"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@id/item_result_iv"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_16" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_5"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/item_result_iv"
+                    android:layout_marginRight="@dimen/dp_8"
+                    android:src="@mipmap/three_cicle" />
+
+            </RelativeLayout>
+
+            <com.buyint.mergerbot.view.DashedLineView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="@dimen/dp_24"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/item_result_des"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_18" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/item_result_mao_iv1"
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:src="@drawable/cicle_black" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="@dimen/dp_21"
+                    android:layout_alignLeft="@id/item_result_mao_iv1"
+                    android:layout_below="@id/item_result_mao_iv1"
+                    android:layout_marginLeft="@dimen/dp_2"
+                    android:background="@color/colorBlack" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_5"
+                    android:layout_height="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginTop="@dimen/dp_36"
+                    android:src="@drawable/cicle_black" />
+
+                <TextView
+                    android:id="@+id/item_result_ppl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/item_result_zanwu_tv"
+                    android:layout_alignTop="@+id/item_result_tv_matchrate"
+                    android:text="@string/match_record"
+                    android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/item_result_zanwu_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_result_ppl"
+                    android:layout_marginLeft="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:textSize="@dimen/text_14" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="@dimen/dp_21"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/item_result_mao_iv1"
+                    android:layout_marginRight="@dimen/dp_50"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/item_reult_simple_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/item_result_mao_iv1"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:text="@string/similar_company"
+                    android:textSize="@dimen/text_10" />
+
+                <TextView
+                    android:id="@+id/item_result_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/item_reult_simple_company"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@id/item_result_zanwu_tv"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:textSize="@dimen/text_14" />
+
+                <View
+                    android:id="@+id/item_result_line_center"
+                    android:layout_width="1px"
+                    android:layout_height="@dimen/dp_21"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/item_result_mao_iv1"
+                    android:layout_marginRight="@dimen/dp_120"
+                    android:background="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/item_result_tv_matchrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/item_result_line_center"
+                    android:layout_alignTop="@id/item_result_mao_iv1"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:layout_marginRight="@dimen/dp_75"
+                    android:text="@string/match_race"
+                    android:textSize="@dimen/text_10" />
+
+                <TextView
+                    android:id="@+id/item_result_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/item_result_line_center"
+                    android:layout_alignTop="@id/item_result_zanwu_tv"
+                    android:layout_marginLeft="@dimen/dp_8"
+                    android:textSize="@dimen/text_14" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

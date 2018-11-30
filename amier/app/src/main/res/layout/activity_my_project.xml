@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_my_project_toolbar"
+        layout="@layout/toolbar_white" />
+
+    <LinearLayout
+        android:id="@+id/activity_my_project_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_my_project_toolbar"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_my_project_i_create"
+                style="@style/textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:text="@string/i_create_project"
+                android:textColor="?attr/app_color" />
+
+            <View
+                android:id="@+id/activity_my_project_i_create_view"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_3"
+                android:background="?attr/app_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_my_project_i_match"
+                style="@style/textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:text="@string/i_match_project"
+                android:textColor="@color/color_999999" />
+
+            <View
+                android:id="@+id/activity_my_project_i_match_view"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/transform" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_my_project_i_care"
+                style="@style/textview_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_8"
+                android:paddingTop="@dimen/dp_8"
+                android:text="@string/i_care_project"
+                android:textColor="@color/color_999999" />
+
+            <View
+                android:id="@+id/activity_my_project_i_care_view"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_3"
+                android:background="@color/transform" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/activity_my_project_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_below="@id/activity_my_project_ll"
+        android:background="@color/color_f6f7f8" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_my_project_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_my_project_line" />
+
+    <FrameLayout
+        android:id="@+id/activity_my_project_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_my_project_toolbar">
+
+    </FrameLayout>
+
+</RelativeLayout>

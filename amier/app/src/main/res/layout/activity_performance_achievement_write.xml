@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6f7f8">
+
+    <include
+        android:id="@+id/activity_performance_achievement_write_top"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_performance_achievement_write_top"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/required_field_xing"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_project_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/project_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_project_name_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/write_project_name"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/company_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_company_name_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/please_write_company_name"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_position_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/position_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_position_name_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/write_company_position"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_start_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/start_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_start_time_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/write_start_time"
+                    android:textColor="@color/color_999999" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_end_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/end_time"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_end_time_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/write_end_time"
+                    android:textColor="@color/color_999999" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_related_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="top"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/related_people"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <com.buyint.mergerbot.view.FluidLayout
+                    android:id="@+id/activity_performance_achievement_write_related_people_fl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_party"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="top"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/party"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <com.buyint.mergerbot.view.FluidLayout
+                    android:id="@+id/activity_performance_achievement_write_party_fl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_transaction_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="top"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingTop="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/transaction_type"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <com.buyint.mergerbot.view.FluidLayout
+                    android:id="@+id/activity_performance_achievement_write_transaction_type_fl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/optional"
+                android:textColor="@color/colorBlack" />
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_company_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/company_address"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_company_address_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/please_write_work_place"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_project_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/project_desc"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_project_desc_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/please_write_project_desc"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_project_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/project_position"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_project_position_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/please_write_project_position"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_performance_achievement_write_project_performance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="@drawable/view_press_bg"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/dp_16">
+
+                <TextView
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:text="@string/project_performance"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/activity_performance_achievement_write_project_performance_tv"
+                    style="@style/textview_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:layout_weight="1"
+                    android:hint="@string/please_write_project_performance"
+                    android:textColor="@color/color_999999" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_16"
+                    android:layout_height="@dimen/dp_16"
+                    android:layout_marginEnd="@dimen/dp_16"
+                    android:src="@mipmap/arrow_right" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_performance_achievement_write_delete"
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:text="@string/delete_this_deal_experience"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/activity_performance_achievement_write_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_performance_achievement_write_top" />
+
+</RelativeLayout>

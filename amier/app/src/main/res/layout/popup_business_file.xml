@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/popup_business_file_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_80"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/pop_bg"
+        android:paddingRight="@dimen/dp_60">
+
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:background="@mipmap/my_preview_show"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:textSize="@dimen/text_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="预览商业档案"
+            android:textColor="@color/colorBlack"
+            app:layout_constraintLeft_toRightOf="@+id/iv_pic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_2"
+            android:text="点击预览商业档案"
+            android:textColor="@color/colorEditTextHint"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_pic"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

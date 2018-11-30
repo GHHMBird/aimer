@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/activity_business_identity_verification_invite_lawyer_top"
+        layout="@layout/toolbar_white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@mipmap/icon_invite_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/now_verify"
+        android:textColor="@color/color_775ce0"
+        android:textSize="@dimen/text_16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/invitation_sent_successfully"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/please_wait_lawyer_help_verify"
+        android:textColor="@color/colorEditTextHint" />
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_f6f7f8"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/re_invite" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+</LinearLayout>

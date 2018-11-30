@@ -1,0 +1,180 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "com.buyint.mergerbot"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 44
+        versionName "1.3.5"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "22ff9fdf346cc896b9cf3ce4", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+
+        ndk {
+            abiFilters "armeabi", "x86"
+        }
+
+    }
+    signingConfigs {
+        release {
+            storeFile file("../aimer.jks")
+            storePassword "qwerty12"
+            keyAlias "qwerty12"
+            keyPassword "qwerty12"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+            jniDebuggable false
+            renderscriptDebuggable false
+            zipAlignEnabled true
+            signingConfig signingConfigs.release//打包命令行：gradlew assembleRelease
+            applicationVariants.all { variant ->
+                if (variant.buildType.name == 'release') {
+                    variant.outputs.all {
+//                        def outputFile = output.outputFile
+//                        if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        outputFileName = "Aimer_V${defaultConfig.versionCode}.apk"
+//                            output.outputFile = new File(outputFile.parent, fileName)
+//                        }
+                    }
+                }
+            }
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['src/main/jniLibs']
+            assets.srcDirs = ['assets']
+        }
+    }
+    repositories {
+        mavenCentral()
+//        flatDir {
+//            dirs 'libs'
+//        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    dataBinding {
+        true
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    implementation 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+    implementation 'com.android.support:gridlayout-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    testImplementation 'junit:junit:4.12'
+    implementation group: 'com.github.bumptech.glide', name: 'compiler', version: '4.3.1'
+    implementation 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    //----------------------------------------------------------------------------
+    //dialog
+    implementation 'com.afollestad.material-dialogs:core:0.8.6.2'
+    //响应式
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+    //OKHTTP网络连接拦截器，用来打印接口LOG
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //GSON转换
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    //极光推送
+    implementation files('libs/jcore-android-1.1.9.jar')
+    implementation files('libs/jpush-android-3.1.1.jar')
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+    implementation files('libs/Android_Map3D_SDK.jar')
+    implementation files('libs/AMap_Search.jar')
+    implementation 'com.wx.wheelview:wheelview:1.3.3'
+    implementation 'com.belerweb:pinyin4j:2.5.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation files('libs/kotlin_jdk.jar')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    //百度统计
+    implementation 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    //linkedin
+    implementation project(path: ':linkedin-sdk')
+    //高德定位
+    implementation 'com.amap.api:location:latest.integration'
+    //非关系型数据库
+    implementation 'com.snappydb:snappydb-lib:0.5.2'
+    implementation 'com.esotericsoftware.kryo:kryo:2.24.0'
+
+    //rxpermissions
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+
+    //微软api
+    implementation 'com.microsoft.projectoxford:speechrecognition:1.2.2'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.34'
+
+    implementation 'cn.yipianfengye.android:zxing-library:2.1'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //加载动画
+    implementation 'com.wang.avi:library:2.1.3'
+
+    //下拉刷新上拉加载库
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+
+    //高亮提示
+    implementation 'com.isanwenyu.highlight:highlight:1.8.0'
+
+
+}
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}

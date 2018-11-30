@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:voiceView="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:voiceView="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/toolbar_white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_f6f7f8"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_50"
+                                android:gravity="center_vertical"
+                                android:paddingBottom="@dimen/dp_8"
+                                android:paddingTop="@dimen/dp_8">
+
+                                <TextView
+                                    android:id="@+id/activity_match_record2_tv_go"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/dp_16"
+                                    android:layout_weight="1"
+                                    android:text="新增商友20人，客户5人" />
+
+                                <TextView
+                                    android:id="@+id/activity_match_record_tv1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/item_left_app_color"
+                                    android:paddingBottom="@dimen/dp_3"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_3"
+                                    android:text="关系人"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/activity_match_record_tv2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/dp_16"
+                                    android:background="@color/white"
+                                    android:paddingBottom="@dimen/dp_3"
+                                    android:paddingLeft="@dimen/dp_8"
+                                    android:paddingRight="@dimen/dp_8"
+                                    android:paddingTop="@dimen/dp_3"
+                                    android:text="通讯录"
+                                    android:textColor="@color/colorBlack" />
+
+                                <ImageView
+                                    android:id="@+id/activity_match_record_select_iv"
+                                    android:layout_width="@dimen/dp_24"
+                                    android:layout_height="@dimen/dp_24"
+                                    android:layout_marginRight="@dimen/dp_16"
+                                    android:src="@mipmap/match_record_select" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/activity_match_record_fab_rl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_50"
+                                android:background="@color/color_cc00"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade
+                                android:id="@+id/activity_match_record_srl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:srlEnablePureScrollModeBottom="true"
+                                app:srlEnablePureScrollModeTop="true">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/activity_match_record_recycler1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade>
+
+                            <com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade
+                                android:id="@+id/activity_match_record_srl2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone"
+                                app:srlEnablePureScrollModeBottom="true"
+                                app:srlEnablePureScrollModeTop="true">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/activity_match_record_recycler2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </com.buyint.mergerbot.view.SmartRefreshLayoutHHMMade>
+
+                            <RelativeLayout
+                                android:id="@+id/activity_match_record_fab_rl2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/color_cc00"
+                                android:visibility="gone" />
+
+                            <com.buyint.mergerbot.view.floatingactionbutton.FloatingActionsMenu
+                                android:id="@+id/activity_match_record_fam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginBottom="@dimen/dp_16"
+                                android:layout_marginRight="@dimen/dp_10"
+                                app:fab_addButtonColorNormal="?attr/app_color"
+                                app:fab_addButtonColorPressed="?attr/app_color"
+                                app:fab_addButtonSize="normal"
+                                app:fab_addButton_icon="@mipmap/match_record_fam_ic"
+                                app:fab_labelStyle="@style/menu_lables_style">
+
+                                <!--<com.buyint.mergerbot.view.floatingactionbutton.FloatingActionButton-->
+                                    <!--android:id="@+id/activity_match_record_fab1"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--app:fab_colorNormal="@color/white"-->
+                                    <!--app:fab_colorPressed="@color/white"-->
+                                    <!--app:fab_icon="@mipmap/match_record_2"-->
+                                    <!--app:fab_size="normal"-->
+                                    <!--app:fab_title="@string/intellectual_union" />-->
+
+                                <!--<com.buyint.mergerbot.view.floatingactionbutton.FloatingActionButton-->
+                                    <!--android:id="@+id/activity_match_record_fab2"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--app:fab_colorNormal="@color/white"-->
+                                    <!--app:fab_colorPressed="@color/white"-->
+                                    <!--app:fab_icon="@mipmap/match_record_1"-->
+                                    <!--app:fab_size="normal"-->
+                                    <!--app:fab_title="@string/human_relation" />-->
+
+                            </com.buyint.mergerbot.view.floatingactionbutton.FloatingActionsMenu>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transform">
+
+                            <RelativeLayout
+                                android:id="@+id/activity_match_record_bottom_rl"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp_50">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/jianbian_blue"
+                                    android:gravity="center_vertical">
+
+                                    <ImageView
+                                        android:id="@+id/activity_match_record_speak"
+                                        android:layout_width="@dimen/dp_40"
+                                        android:layout_height="@dimen/dp_40"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:src="@mipmap/speak3" />
+
+                                    <com.buyint.mergerbot.view.DeleteEditText
+                                        android:id="@+id/activity_match_record_et"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="@dimen/dp_6"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_marginTop="@dimen/dp_6"
+                                        android:hint="查查，您的朋友谁认识xxx"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/et_bg"
+                                        android:paddingLeft="@dimen/dp_9"
+                                        android:paddingRight="@dimen/dp_9"
+                                        android:textColor="@color/color_c9c2e5"
+                                        android:textColorHint="@color/color_c9c2e5"
+                                        android:textCursorDrawable="@drawable/text_input_edit_text_white_cursor"
+                                        android:textSize="@dimen/text_14" />
+
+                                    <TextView
+                                        android:id="@+id/activity_match_record_tv_send"
+                                        android:layout_width="@dimen/dp_50"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginBottom="@dimen/dp_10"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_marginRight="@dimen/dp_5"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:gravity="center"
+                                        android:text="@string/send"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_18"
+                                        android:visibility="gone" />
+
+                                    <ImageView
+                                        android:id="@+id/activity_match_record_iv_nine"
+                                        android:layout_width="@dimen/dp_40"
+                                        android:layout_height="@dimen/dp_40"
+                                        android:layout_marginBottom="@dimen/dp_10"
+                                        android:layout_marginLeft="@dimen/dp_5"
+                                        android:layout_marginRight="@dimen/dp_5"
+                                        android:layout_marginTop="@dimen/dp_10"
+                                        android:src="@mipmap/add_cicle" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/activity_match_record_fab_rl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/color_cc00"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                            <GridView
+                                android:id="@+id/activity_match_record_bottom_grid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/activity_match_record_bottom_rl"
+                                android:background="@drawable/jianbian_blue2"
+                                android:numColumns="3"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/activity_match_record_mengceng2_center_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dp_150"
+                        android:background="@color/color_f6f7f8">
+
+                        <TextView
+                            android:id="@+id/activity_match_record_mengceng2_center_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_80"
+                            android:gravity="center"
+                            android:text="@string/please_speak_people_you_want_search"
+                            android:textColor="@color/color_333333" />
+
+                    </RelativeLayout>
+
+                    <com.buyint.mergerbot.view.VoiceLineView
+                        android:id="@+id/activity_match_record_voiceline"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_150"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_f6f7f8"
+                        voiceView:fineness="two"
+                        voiceView:maxVolume="100"
+                        voiceView:viewMode="line" />
+
+                    <FrameLayout
+                        android:id="@+id/activity_match_record_fl"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <ExpandableListView
+            android:id="@+id/activity_match_record2_elv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_match_record_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@color/color_f6f7f8"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/re_choose"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/activity_match_record_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="?attr/app_color"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/alright"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

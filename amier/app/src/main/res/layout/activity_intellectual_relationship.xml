@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/color_f6f7f8" />
+
+    <LinearLayout
+        android:id="@+id/activity_intellectual_relationship_verification_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_weight="1"
+                android:text="@string/become_verification_user_you_can_try_start_with_your_friend"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_12" />
+
+            <com.buyint.mergerbot.view.SelectableBackgroundView
+                android:id="@+id/activity_intellectual_relationship_verification_sbv"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_30"
+                android:background="@color/color_f6f7f8"
+                app:sb_isCheck="true"
+                app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+                app:sb_selectedColor="@drawable/item_app_rentage_corner"
+                app:sb_size="0dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/prompt_verification" />
+
+            </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:background="@color/color_f6f7f8" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:hint="@string/start_point"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/activity_intellectual_relationship_start_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@color/color_f6f7f8" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:hint="@string/end_point"
+        android:textSize="@dimen/text_14" />
+
+    <TextView
+        android:id="@+id/activity_intellectual_relationship_end_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:hint="@string/please_fill_in_word_and_white_stand"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_5"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:background="@color/color_f6f7f8" />
+
+    <com.buyint.mergerbot.view.SelectableBackgroundView
+        android:id="@+id/activity_intellectual_relationship_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:background="@color/color_f6f7f8"
+        app:sb_isCheck="true"
+        app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+        app:sb_selectedColor="@drawable/item_app_rentage_corner"
+        app:sb_size="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:gravity="center"
+            android:text="@string/start_match" />
+
+    </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+    <TextView
+        android:id="@+id/activity_intellectual_relationship_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/see_history" />
+
+</LinearLayout>

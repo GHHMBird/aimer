@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_add_authorization_management_top"
+        layout="@layout/toolbar_white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_add_authorization_management_top"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/activity_add_authorization_management_iv_rl"
+                android:layout_width="@dimen/dp_90"
+                android:layout_height="@dimen/dp_90"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/cicle_gray" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dp_1"
+                    android:src="@drawable/circle_white" />
+
+                <ImageView
+                    android:id="@+id/activity_add_authorization_management_iv"
+                    android:layout_width="@dimen/dp_90"
+                    android:layout_height="@dimen/dp_90"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dp_3"
+                    android:src="@mipmap/default_user" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/camera" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/activity_add_authorization_management_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@null"
+                android:hint="@string/secretary_name"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/color_f6f7f8" />
+
+            <EditText
+                android:id="@+id/activity_add_authorization_management_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@null"
+                android:hint="@string/position_name"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/color_f6f7f8" />
+
+            <EditText
+                android:id="@+id/activity_add_authorization_management_position"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@null"
+                android:hint="@string/position_name"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/color_f6f7f8" />
+
+            <EditText
+                android:id="@+id/activity_add_authorization_management_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@null"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/color_f6f7f8" />
+
+            <EditText
+                android:id="@+id/activity_add_authorization_management_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@null"
+                android:hint="@string/email"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/color_f6f7f8" />
+
+            <EditText
+                android:id="@+id/activity_add_authorization_management_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_20"
+                android:background="@null"
+                android:hint="@string/secretary_password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/color_f6f7f8" />
+
+            <com.buyint.mergerbot.view.SelectableBackgroundView
+                android:id="@+id/activity_add_authorization_management_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_30"
+                app:sb_isCheck="true"
+                android:background="@color/color_f6f7f8"
+                app:sb_normalColor="@drawable/item_rentage_gray_corner_reverse"
+                app:sb_selectedColor="@drawable/item_app_rentage_corner"
+                app:sb_size="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/prompt_verification" />
+
+            </com.buyint.mergerbot.view.SelectableBackgroundView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/activity_add_authorization_management_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/activity_add_authorization_management_top" />
+
+</RelativeLayout>

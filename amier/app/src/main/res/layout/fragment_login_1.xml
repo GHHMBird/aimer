@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/fragment_login_1_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginRight="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_220"
+                android:gravity="center_vertical">
+
+                <com.buyint.mergerbot.view.DeleteEditText
+                    android:id="@+id/fragment_login_1_et_phone1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/enter_your_phone_number"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/text_16" />
+
+                <ImageView
+                    android:id="@+id/fragment_login_1_down"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:src="@mipmap/down_color_primary" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/color_999999" />
+
+            <com.buyint.mergerbot.view.DeleteEditText
+                android:id="@+id/fragment_login_1_et_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_26"
+                android:layout_marginRight="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@null"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/color_cccccc"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/color_999999" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/fragment_login_1_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_26"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:background="@null"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:hint="@string/remember_password"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/fragment_login_1_forget_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_15"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/text_16" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_50"
+                android:gravity="center_vertical">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/fragment_login_1_tv_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@drawable/tx_bg_blue"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="@string/alright_wake_up_aimer"
+                    android:textColor="@color/color_959dce"
+                    android:textSize="@dimen/text_16"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_36"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_login"
+                    android:textColor="@color/color_cccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fragment_login_1_linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_24"
+                        android:drawablePadding="@dimen/dp_3"
+                        android:drawableTop="@mipmap/linkedin_login"
+                        android:text="@string/linkedin"
+                        android:textColor="@color/color_cccccc" />
+
+                    <TextView
+                        android:id="@+id/fragment_login_1_sms_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_24"
+                        android:drawablePadding="@dimen/dp_3"
+                        android:drawableTop="@mipmap/msg_login"
+                        android:text="@string/sms_login"
+                        android:textColor="@color/color_cccccc" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fragment_login_1_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_220"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_10">
+
+                <com.buyint.mergerbot.view.DeleteEditText
+                    android:id="@+id/fragment_login_1_et_phone2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:background="@null"
+                    android:hint="@string/enter_your_phone_number"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_cccccc"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:background="@color/color_999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_50"
+                android:gravity="center_vertical">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/fragment_login_1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:background="@drawable/tx_bg_blue"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/dp_5"
+                    android:paddingLeft="@dimen/dp_10"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_5"
+                    android:text="@string/get_verification"
+                    android:textColor="@color/color_959dce"
+                    android:textSize="@dimen/text_16" />
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_36"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/other_login"
+                    android:textColor="@color/color_cccccc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/fragment_login_2_linkedin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp_24"
+                        android:drawablePadding="@dimen/dp_3"
+                        android:drawableTop="@mipmap/linkedin_login"
+                        android:text="@string/linkedin"
+                        android:textColor="@color/color_cccccc" />
+
+                    <TextView
+                        android:id="@+id/fragment_login_2_account_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_24"
+                        android:drawablePadding="@dimen/dp_3"
+                        android:drawableTop="@mipmap/account_login"
+                        android:text="@string/account_login"
+                        android:textColor="@color/color_cccccc" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fragment_login_1_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="@string/register"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/text_16" />
+
+    <com.buyint.mergerbot.view.AimerLogoImageView
+        android:id="@+id/activity_login_iv"
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/speak_icon_anim"
+        android:transitionName="buyint_logo" />
+
+    <TextView
+        android:id="@+id/activity_login_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_login_iv"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:text="@string/enter_your_account_and_wake_me_up"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_20"
+        android:textStyle="bold" />
+
+</RelativeLayout>

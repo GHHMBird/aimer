@@ -1,0 +1,12 @@
+package com.buyint.mergerbot.interfaces
+
+import com.buyint.mergerbot.dto.RegisterRequest
+import com.buyint.mergerbot.dto.RegisterVerificationResponse
+import io.reactivex.Observable
+
+/**
+ * Created by huheming on 2018/6/28
+ */
+interface IRegisterVerificationModel {
+    fun registerVerification(request: RegisterRequest): Observable<RegisterVerificationResponse>
+}

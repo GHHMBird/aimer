@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6f7f8"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_language_chinese"
+            android:layout_width="match_parent"
+            android:background="@drawable/view_press_bg"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/chinese"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:id="@+id/activity_language_chinese_iv"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:src="@drawable/ring_blue" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginRight="@dimen/dp_16"
+            android:background="@color/color_f6f7f8" />
+
+        <LinearLayout
+            android:id="@+id/activity_language_english"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/view_press_bg"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/textview_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp_16"
+                android:text="@string/english"
+                android:textColor="@color/colorBlack" />
+
+            <ImageView
+                android:id="@+id/activity_language_english_iv"
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_16"
+                android:src="@drawable/ring_gray" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_color_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_220"
+        android:background="@drawable/jianbian_blue2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_70"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:src="@mipmap/activity_color_bg" />
+
+            <TextView
+                android:id="@+id/activity_color_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_20" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_26"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_24"
+            android:src="@mipmap/arrow_back_white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/black_rl"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:background="@mipmap/activity_color_bg">
+
+            <ImageView
+                android:id="@+id/black"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/color_select_black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/light_blue_rl"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:background="@mipmap/activity_color_bg">
+
+            <ImageView
+                android:id="@+id/light_blue"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/color_select_light_blue" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/red_rl"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_36"
+            android:background="@mipmap/activity_color_bg">
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/color_select_red" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RelativeLayout
+            android:id="@+id/deep_blue_rl"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:background="@mipmap/activity_color_bg">
+
+            <ImageView
+                android:id="@+id/deep_blue"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/color_select_deep_blue" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/standard_rl"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:background="@mipmap/activity_color_bg">
+
+            <ImageView
+                android:id="@+id/standard"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/color_select_standard" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pink_rl"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:background="@mipmap/activity_color_bg">
+
+            <ImageView
+                android:id="@+id/pink"
+                android:layout_width="@dimen/dp_36"
+                android:layout_height="@dimen/dp_36"
+                android:layout_centerInParent="true"
+                android:src="@drawable/color_select_pink" />
+
+        </RelativeLayout>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

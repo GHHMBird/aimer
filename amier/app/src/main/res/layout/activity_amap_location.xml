@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/activity_amap_location_top"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_amap_location_top">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/activity_amap_location_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_16"
+                android:layout_height="@dimen/dp_16"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:src="@mipmap/work_place" />
+
+            <TextView
+                android:id="@+id/activity_amap_location_place"
+                style="@style/textview_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_16"
+                android:paddingLeft="@dimen/dp_16"
+                android:paddingRight="@dimen/dp_16" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_amap_location_iv_top"
+            android:layout_width="@dimen/dp_2"
+            android:layout_height="@dimen/dp_10"
+            android:layout_centerInParent="true"
+            android:background="@color/colorBlack" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10"
+            android:layout_above="@id/activity_amap_location_iv_top"
+            android:layout_centerInParent="true"
+            android:src="@drawable/cicle_red" />
+    </RelativeLayout>
+
+</RelativeLayout>

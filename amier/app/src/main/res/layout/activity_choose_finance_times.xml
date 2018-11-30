@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/activity_choose_finance_time_cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:button="@drawable/check_selector_registration"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="@string/early_phase"
+            android:textColor="@color/color_283360"
+            android:textSize="@dimen/text_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/activity_choose_finance_times_ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f6f7f8"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll1_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_3"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/seed"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll1_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/angel"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll1_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/informality"
+                android:textColor="@color/color_999999" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activity_choose_finance_times_view1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_999999"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/activity_choose_finance_times_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f6f7f8"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll1_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_a_cicle"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll1_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_a"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll1_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_a_plus"
+                android:textColor="@color/color_999999" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activity_choose_finance_times_view2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_999999"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/activity_choose_finance_time_cb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:button="@drawable/check_selector_registration"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="@string/interim"
+            android:textColor="@color/color_283360"
+            android:textSize="@dimen/text_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/activity_choose_finance_times_ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f6f7f8"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll2_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_b_cicle"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll2_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_b"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll2_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_b_plus"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll2_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_c"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll2_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_2"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_c_plus"
+                android:textColor="@color/color_999999" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activity_choose_finance_times_view3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_999999"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/activity_choose_finance_time_cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:button="@drawable/check_selector_registration"
+            android:paddingLeft="@dimen/dp_5"
+            android:text="@string/anaphasis"
+            android:textColor="@color/color_283360"
+            android:textSize="@dimen/text_18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@color/color_999999" />
+
+        <LinearLayout
+            android:id="@+id/activity_choose_finance_times_ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f6f7f8"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll3_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_d"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll3_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_e"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll3_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_f"
+                android:textColor="@color/color_999999" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activity_choose_finance_times_view4"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_999999"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/activity_choose_finance_times_ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_f6f7f8"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_8"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll3_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_16"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_ipo"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll3_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/pre_neeq"
+                android:textColor="@color/color_999999" />
+
+            <TextView
+                android:id="@+id/activity_choose_finance_time_ll3_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_4"
+                android:paddingRight="@dimen/dp_4"
+                android:paddingTop="@dimen/dp_2"
+                android:text="@string/ipo_plus"
+                android:textColor="@color/color_999999" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/activity_choose_finance_times_view5"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_999999"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_choose_finance_time_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_24"
+        android:background="@drawable/tx_bg_blue"
+        android:gravity="right"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_5"
+        android:text="@string/save_choose"
+        android:textColor="@color/color_959dce" />
+
+
+</LinearLayout>

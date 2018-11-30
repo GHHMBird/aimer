@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rentage_white"
+        android:elevation="@dimen/dp_3">
+
+        <TextView
+            android:id="@+id/fragment_match_record_human_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_30"
+            android:maxLength="5"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/fragment_match_record_human_icon"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_30"
+            android:src="@mipmap/default_user" />
+
+        <TextView
+            android:id="@+id/fragment_match_record_human_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_120"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/fragment_match_record_human_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_180"
+            android:textSize="@dimen/text_20" />
+
+        <TextView
+            android:id="@+id/fragment_match_record_human_relation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:background="@drawable/rentage_appcolor_corner"
+            android:paddingBottom="@dimen/dp_3"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
